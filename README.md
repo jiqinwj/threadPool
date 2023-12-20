@@ -14,5 +14,6 @@ Function directory：
 - 在windows平台下运行良好的线程池，在linux平台下运行发生死锁问题，平台运行结果不一致！！！
 
 解决方案
+
 linux下通过gdb attach到正在运行的进程，通过info threads，thread tid，bt等命令查看各个子线程的调用
 堆栈信息，一行一行定位项目代码，最终定位到发生死锁的代码位置，分析死锁问题发生的原因，最终解决
